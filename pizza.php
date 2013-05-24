@@ -1,5 +1,4 @@
 
-
 <?php
 $Pizza_Morskaia=$_REQUEST['Pizza_Morskaia'];
 echo "Pizza_Morskaia=$Pizza_Morskaia <br>";
@@ -25,6 +24,8 @@ $otrumania=$_REQUEST['otrumania'];
 echo "otrumania=$otrumania <br>";
 $kilkist=$_REQUEST['kilkist'];
 echo "kilkist=$kilkist <br>";
-
+$fp=fopen("new.txt","a");
+fputs($fp,"$Pizza_Morskaia\t$Pizza_Gribu_kovbasa\t$Pizza_Shunka\t$Pizza_Chicen\t$Osnova_pod_pizzy\t$Pizza_Perec\t$Pizza_Cur\t$Pizza_Kykyrydza\t$Pizza_Ananasu\t$Pizza_Selen\t$otrumania\t$kilkist");
+fclose($fp);
 
 ?>

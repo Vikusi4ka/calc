@@ -1,5 +1,6 @@
 
 <?php
+header('Content-type: text/html; charset=utf-8');
 $Pizza_Morskaia=$_REQUEST['Pizza_Morskaia'];
 echo "Pizza_Morskaia=$Pizza_Morskaia <br>";
 $Pizza_Gribu_kovbasa=$_REQUEST['Pizza_Gribu_kovbasa'];
@@ -25,7 +26,7 @@ echo "otrumania=$otrumania <br>";
 $kilkist=$_REQUEST['kilkist'];
 echo "kilkist=$kilkist <br>";
 $fp=fopen("new.txt","a");
-fputs($fp,"$Pizza_Morskaia\t$Pizza_Gribu_kovbasa\t$Pizza_Shunka\t$Pizza_Chicen\t$Osnova_pod_pizzy\t$Pizza_Perec\t$Pizza_Cur\t$Pizza_Kykyrydza\t$Pizza_Ananasu\t$Pizza_Selen\t$otrumania\t$kilkist");
+fputs($fp,"$Pizza_Morskaia\t$Pizza_Gribu_kovbasa\t$Pizza_Shunka\t$Pizza_Chicen\t$Osnova_pod_pizzy\t$Pizza_Perec\t$Pizza_Cur\t$Pizza_Kykyrydza\t$Pizza_Ananasu\t$Pizza_Selen\t$otrumania\t$kilkist\n");
 fclose($fp);
 
 ?>
